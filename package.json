@@ -1,0 +1,33 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/style-resources": "^1.2.1",
+    "@vimeo/player": "^2.16.3",
+    "bigpicture": "^2.5.3",
+    "core-js": "^3.15.1",
+    "dat.gui": "^0.7.7",
+    "gsap": "^3.7.1",
+    "nuxt": "^2.15.7",
+    "three": "^0.139.2",
+    "tiny-slider": "^2.9.4",
+    "vue-tiny-slider": "^0.1.39"
+  },
+  "devDependencies": {
+    "@nuxt/image": "^0.6.0",
+    "@nuxtjs/svg": "^0.3.0",
+    "nuxt-gsap-module": "^1.5.0",
+    "prettier": "^2.3.2",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.39.0",
+    "sass-loader": "^10.2.0",
+    "style-resources-loader": "^1.4.1"
+  }
+}

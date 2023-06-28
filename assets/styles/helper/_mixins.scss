@@ -1,0 +1,30 @@
+@mixin _xxl {
+  @media (max-width: $mq-xxl) {
+    @content;
+  }
+}
+@mixin _xl {
+  @media (max-width: $mq-xl) {
+    @content;
+  }
+}
+@mixin _lg {
+  @media (max-width: $mq-lg) {
+    @content;
+  }
+}
+@mixin _md {
+  @media (max-width: $mq-md) {
+    @content;
+  }
+}
+@mixin _sm {
+  @media (max-width: $mq-sm) {
+    @content;
+  }
+}
+@mixin _xs {
+  @media (max-width: $mq-xs) {
+    @content;
+  }
+}

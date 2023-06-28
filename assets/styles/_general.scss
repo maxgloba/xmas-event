@@ -1,0 +1,425 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+
+  @include _sm {
+    padding: 0 15px;
+  }
+}
+
+//vars for fluid font sizes
+$maxS: 1920;
+$minS: 480;
+
+.text-xxxxl {
+  font-size: 111px;
+  line-height: 1;
+
+  @include _xxl {
+    font-size: calc(42px + (111 - 42) * ((100vw - #{$minS}px) / (#{$maxS} - #{$minS})));
+  }
+
+  @include _sm {
+    font-size: 42px;
+  }
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.text-xxxls {
+  font-size: 80px;
+  line-height: 1.1;
+
+  @include _xxl {
+    font-size: calc(40px + (80 - 40) * ((100vw - #{$minS}px) / (#{$maxS} - #{$minS})));
+  }
+
+  @include _sm {
+    font-size: 40px;
+  }
+}
+
+.text-_xxxl {
+  font-size: 72px;
+  line-height: 1.1;
+
+  @include _xxl {
+    font-size: calc(32px + (72 - 32) * ((100vw - #{$minS}px) / (#{$maxS} - #{$minS})));
+  }
+
+  @include _sm {
+    font-size: 32px;
+  }
+}
+
+.text-xxxl {
+  font-size: 64px;
+  line-height: 1.3;
+
+  @include _xxl {
+    font-size: calc(28px + (64 - 28) * ((100vw - #{$minS}px) / (#{$maxS} - #{$minS})));
+  }
+
+  @include _sm {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+}
+
+.text-_xxxl {
+  font-size: 60px;
+  line-height: 1.3;
+
+  @include _xxl {
+    font-size: calc(26px + (60 - 28) * ((100vw - #{$minS}px) / (#{$maxS} - #{$minS})));
+  }
+
+  @include _sm {
+    font-size: 26px;
+    line-height: 1.1;
+  }
+}
+
+.text-xxl {
+  font-size: 52px;
+  line-height: 1.3;
+
+  @include _xxl {
+    font-size: calc(24px + (52 - 24) * ((100vw - #{$minS}px) / (#{$maxS} - #{$minS})));
+  }
+
+  @include _sm {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+
+.text-_xxl {
+  font-size: 50px;
+  line-height: 1.3;
+
+  @include _xxl {
+    font-size: calc(24px + (50 - 24) * ((100vw - #{$minS}px) / (#{$maxS} - #{$minS})));
+  }
+
+  @include _sm {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+}
+
+.text-_xl {
+  font-size: 48px;
+  line-height: 1.3;
+
+  @include _xxl {
+    font-size: calc(24px + (48 - 24) * ((100vw - #{$minS}px) / (#{$maxS} - #{$minS})));
+  }
+
+  @include _sm {
+    font-size: 24px;
+  }
+}
+
+.text-xls {
+  font-size: 40px;
+  line-height: 1.23;
+
+  @include _xxl {
+    font-size: calc(24px + (40 - 24) * ((100vw - #{$minS}px) / (#{$maxS} - #{$minS})));
+  }
+
+  @include _sm {
+    font-size: 24px;
+  }
+}
+
+.text-xl {
+  font-size: 36px;
+  line-height: 1.1;
+
+  @include _xxl {
+    font-size: calc(20px + (36 - 20) * ((100vw - #{$minS}px) / (#{$maxS} - #{$minS})));
+  }
+
+  @include _sm {
+    font-size: 20px;
+  }
+}
+
+.text-sxl {
+  font-size: 30px;
+  line-height: 1.2;
+
+  @include _xxl {
+    font-size: calc(20px + (30 - 20) * ((100vw - #{$minS}px) / (#{$maxS} - #{$minS})));
+  }
+
+  @include _sm {
+    font-size: 20px;
+  }
+}
+
+
+.text-lg {
+  font-size: 24px;
+  line-height: 1.2;
+
+  @include _xxl {
+    font-size: calc(16px + (24 - 16) * ((100vw - #{$minS}px) / (#{$maxS} - #{$minS})));
+  }
+
+  @include _sm {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+.text-md {
+  font-size: 18px;
+  line-height: 1.4;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @include _xxl {
+    font-size: calc(14px + (18 - 14) * ((100vw - #{$minS}px) / (#{$maxS} - #{$minS})));
+  }
+
+  @include _sm {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+.text-sm {
+  font-size: 16px;
+  line-height: 1.4;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @include _xxl {
+    font-size: calc(12px + (16 - 12) * ((100vw - #{$minS}px) / (#{$maxS} - #{$minS})));
+  }
+
+  @include _sm {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+}
+
+.text-xs {
+  font-size: 14px;
+  line-height: 1.4;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  @include _xxl {
+    font-size: calc(12px + (14 - 12) * ((100vw - #{$minS}px) / (#{$maxS} - #{$minS})));
+  }
+
+  @include _sm {
+    font-size: 12px;
+    line-height: 1.3;
+  }
+}
+
+.clr_black {
+  color: black;
+}
+
+//font style
+
+// weight
+.w300 {
+  font-weight: 300;
+}
+
+.w400 {
+  font-weight: 400;
+}
+
+.w500 {
+  font-weight: 500;
+}
+
+.w600 {
+  font-weight: 600;
+}
+
+.w700 {
+  font-weight: 700;
+}
+
+.w800 {
+  font-weight: 800;
+}
+
+.validation {
+  position: relative;
+}
+
+.error_msg {
+  color: red;
+  font-size: 12px;
+
+  &_easy {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+  }
+}
+
+
+
+//soc links
+.soc-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 214px;
+  margin: 2em -15px 0;
+
+  @include _sm {
+    justify-content: center;
+    width: auto;
+  }
+}
+
+.soc-item {
+  padding: 0 15px;
+}
+
+.soc-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  text-decoration: none;
+
+  &.--inst {
+    background: url('@/assets/img/inst.svg') center no-repeat;
+    background-size: contain;
+
+    &.--black {
+      background: url('@/assets/img/inst_b.svg') center no-repeat;
+    }
+  }
+
+  &.--tw {
+    background: url('@/assets/img/tw.svg') center no-repeat;
+    background-size: contain;
+
+    &.--black {
+      background: url('@/assets/img/tw_b.svg') center no-repeat;
+    }
+  }
+
+  &.--fb {
+    background: url('@/assets/img/fb.svg') center no-repeat;
+    background-size: contain;
+
+    &.--black {
+      background: url('@/assets/img/fb_b.svg') center no-repeat;
+    }
+  }
+
+  &.--google {
+    background: url('@/assets/img/googl.svg') center no-repeat;
+    background-size: contain;
+
+    &.--black {
+      background: url('@/assets/img/googl_b.svg') center no-repeat;
+    }
+  }
+}
+
+
+
+
+@keyframes scaleAnimation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+@keyframes rotateElement {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+// vue transition
+.animateTransition {
+
+  &-enter-active {
+    transition: all .3s ease;
+  }
+
+  &-leave-active {
+    opacity: 0;
+  }
+
+  &-enter,
+  &-leave-to
+    {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+}

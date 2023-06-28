@@ -1,0 +1,11 @@
+//FONTS
+// @import './fonts/fonts';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+//LIBS
+@import './libs/normalize.css';
+// HELPER
+@import './helper/_vars-helper';
+@import './helper/_vars-style';
+@import './helper/_mixins';
+//PARTS
+@import './_general';

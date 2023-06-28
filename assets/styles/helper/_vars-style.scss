@@ -1,0 +1,32 @@
+/* Styles for Theme */
+
+/* General */
+$main-font-color: #6c6d6e;
+
+/* Checkout styles */
+//General
+$checkout-border-width: 1px !default;
+$checkout-border-color: #d9d9d9 !default;
+$checkout-border-radius: 0px !default;
+$checkout-border: $checkout-border-width $checkout-border-color solid !default;
+// Aside
+$checkout-background-aside-color: #fafafa;
+$checkout-aside-color: #6c6d6e;
+// Input
+$checkout-border-input-width: 1px;
+$checkout-border-input-color: #d9d9d9;
+$checkout-border-input-radius: 0px;
+$checkout-border-input: $checkout-border-input-width $checkout-border-input-color solid;
+// Buttons
+$checkout-border-button-radius: 0px;
+$checkout-button-color: #fff;
+$checkout-background-button-color: rgba(25, 123, 189, 1);
+$checkout-background-button-processing-color: rgba(25, 123, 189, 0.7);
+$checkout-background-button-disabled-color: #d9d9d9;
+// Switcher
+$checkout-border-switcher-radius: 0px;
+$checkout-switcher-color: #666;
+$checkout-switcher-color-active: #fff;
+$checkout-background-switcher-color: transparent;
+$checkout-background-switcher-color-active: #333;
+
